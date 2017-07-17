@@ -12,20 +12,36 @@ end
 
 function vim -w vim
     tabc "Solarized Dark"
-    set vimbin (which vim)
     command vim $argv
     tab-reset
 end
 
-function ssh -w ssh
+function colorpick
     set scheme "Default"
     switch $argv[1]
         case '*dev*'
-            tabc "Fishtank"
+            set scheme "Fishtank"
         case '*'
-            tabc "Chalkboard"
+            set scheme "Chalkboard"
     end
+    tabc $scheme
+end
+    
+function ssh -w ssh
+    colorpick $argv
     command ssh $argv
+    tab-reset
+end
+
+function ssh2hc -w ssh
+    colorpick $argv
+    command ssh2hc $argv
+    tab-reset
+end
+
+function ssh2rds -w ssh
+    colorpick $argv
+    command ssh2rds $argv
     tab-reset
 end
 
