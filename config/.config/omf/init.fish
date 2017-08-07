@@ -19,10 +19,10 @@ end
 function colorpick
     set scheme "Default"
     switch $argv[1]
-        case '*dev*'
-            set scheme "Fishtank"
+        case 'dol*'
+            set scheme "AtelierSulphurpool"
         case '*'
-            set scheme "Chalkboard"
+            set scheme "DotGov"
     end
     tabc $scheme
 end
@@ -40,7 +40,7 @@ function ssh2hc -w ssh
 end
 
 function ssh2rds -w ssh
-    colorpick $argv
+    tabc "Cobalt Neon"
     command ssh2rds $argv
     tab-reset
 end
