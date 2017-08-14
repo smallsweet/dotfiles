@@ -109,7 +109,7 @@ set ffs=unix,dos,mac
 " Turn backup off, since most stuff is in SVN, git et.c anyway...
 set nobackup
 set nowb
-set noswapfile
+"set noswapfile
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Text, tab and indent related
