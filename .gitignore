@@ -2,3 +2,4 @@ config/.config/brazil
 config/.config/cr
 config/.config/fish/fishd.*
 vim/.vim/.netrwhist
+config/.config/ninja-dev-sync.json
