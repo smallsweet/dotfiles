@@ -244,4 +244,6 @@ function! VisualSelection(direction, extra_filter) range
      let @" = l:saved_reg
  endfunction
 
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+
 set shell=/bin/bash
