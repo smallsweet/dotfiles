@@ -70,4 +70,5 @@ set PATH ~/bin $PATH
 eval (python3 -m virtualfish compat_aliases)
 
 load_keychain
-set -x EDITOR vim
+set -g EDITOR vim
+set -g theme_display_git_untracked no
