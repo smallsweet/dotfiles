@@ -70,3 +70,4 @@ set PATH ~/bin $PATH
 eval (python3 -m virtualfish compat_aliases)
 
 load_keychain
+set -x EDITOR vim
